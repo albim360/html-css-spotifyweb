@@ -1,12 +1,9 @@
 * {
     margin: 0;
     padding: 0;
+    border: 0;
     box-sizing: border-box;
     border: currentColor;
-}
-
-html {
-    font-family: 'Noto Sans JP', sans-serif;
 }
 
 img {
@@ -101,4 +98,34 @@ a {
 
 .bold {
     font-weight: 600;
+}
+
+
+body {
+    background-color: black;
+    display: flex;
+    height: 100vh; 
+}
+
+header.main-header {
+    width: 200px;
+    height: calc(100vh - 90px);
+    background-color: blue; /* DEBUG RULE */
+    flex-shrink: 0;
+}
+
+.player {
+    width: 100%;
+    height: 90px;
+    flex-shrink: 0;
+    align-self: flex-end;
+    background-color: red;
+    position: fixed;
+}
+
+.main-content > .container {
+    height: 90px;
+    background-color: aqua;
+    width: 100%;
+    position: fixed;
 }
