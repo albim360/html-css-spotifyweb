@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Spotify</title>
     <link rel="stylesheet" href="./css/app.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
@@ -23,14 +23,38 @@
         <nav class="player">
             <div class="container">
                 <div class="row">
-                    <div class="">
-    
+                    <div class="current-track">
+                        <img src="./img/sinister.jpeg" alt="" class="current-track-img">
+                        <h2 class="current-track-title white inline-block">
+                            Sinister
+                            <span class="black-grey current-track-name block">Brano Nome</span>
+                        </h2> 
+                        <i class="fa-regular fa-heart black-grey"></i>
+                        <i class="fa-regular fa-folder black-grey"></i>
                     </div>
-                    <div class="">
-    
+                    <div class="track-command">
+                        <span class="command">
+                            <i class="fa-solid fa-shuffle white"></i>
+                            <i class="fa-solid fa-backward-step white"></i>
+                            <i class="fa-regular fa-circle-play white"></i>
+                            <i class="fa-solid fa-forward-step white"></i>
+                            <i class="fa-solid fa-rotate-right white"></i>
+                            <div class="progress-bar-full">
+                                <p class="inline-block white fs-10px">0:25</p>
+                                <div class="progress-bar-white inline-block"> </div>
+                                <p class="inline-block white fs-10px">4:35</p>
+                            </div>
+
+                        </span>
                     </div>
-                    <div class="">
-    
+                    <div class="volume-device-list white">
+                        <i class="fa-solid fa-list"></i>
+                        <i class="fa-solid fa-display"></i>
+                        <i class="fa-solid fa-volume-high"></i>
+                        <div class="progress-bar-volume inline-block">
+
+                        </div>
+                        
                     </div>
                 </div>
             </div>

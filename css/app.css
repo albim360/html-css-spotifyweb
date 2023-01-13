@@ -17,6 +17,7 @@ li {
     list-style-type: none;
 }
 
+
 a {
     text-decoration: none;
     color: currentColor;
@@ -45,7 +46,7 @@ a {
 }
 
 .black-grey {
-    color: rgb(87, 110, 129);
+    color: rgb(128, 128, 128);
 }
 
 
@@ -104,11 +105,16 @@ a {
     font-weight: 600;
 }
 
+.fs-10px {
+    font-size: 10px;
+}
+
 
 body {
     background-color: black;
     display: flex;
     height: 100vh; 
+    font-family: sans-serif, 'Times New Roman', Times, serif;
 }
 
 header.main-header {
@@ -117,6 +123,23 @@ header.main-header {
     background-color: rgb(0, 0, 0);
     flex-shrink: 0;
 }
+
+main.main-content {
+    width: calc(100% - 200px);
+    height: calc(100% - 90px);
+}
+
+.main-content > .container {
+    height: 90px;
+    background-color: rgb(8, 11, 19);
+    width: 100%;
+    position: fixed;
+}
+
+.row {
+    display: flex;
+}
+/* PLAYER */
 
 .player {
     width: 100%;
@@ -127,11 +150,76 @@ header.main-header {
     position: fixed;
 }
 
-.main-content > .container {
-    height: 90px;
-    background-color: rgb(8, 11, 19);
-    width: 100%;
-    position: fixed;
+.current-track-img {
+    height: 43px;
+    width: 43px;
+    margin: 11px;
+    vertical-align: middle;
+}
+
+.current-track-title {
+    font-size: 14px;
+    vertical-align: middle;
+    padding-right: 15px;
+}
+
+.current-track-name {
+    font-size: 12px;
+}
+
+.player .current-track i{
+    vertical-align: middle;
+    padding-left: 14px;
+}
+
+.player .container {
+    padding: 10px;
+}
+
+.player .row {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.command > .fa-solid {
+    font-size: 20px;
+    padding: 0 16px;
+}
+
+.command > .fa-regular {
+    font-size: 26px;
+    padding: 3px 20px;
+}
+
+.track-command {
+    align-self: flex-start;
+    width: 51%;
+    text-align: center;
+}
+
+.progress-bar-white {
+    width: 55%;
+    height: 4px;
+    border-radius: 25px;
+    background: linear-gradient(to right, white 0%, white 20%, grey 0%, grey 80%);
+
+}
+
+.volume-device-list {
+    align-self: center;
+}
+
+.volume-device-list i{
+    margin-left: 12px;
+}
+
+.progress-bar-volume {
+    width: 76px;
+    height: 4px;
+    border-radius: 25px;
+    background: linear-gradient(to right, white 0%, white 60%, grey 0%, grey 40%);
+    vertical-align: middle;
+
 }
 
 /* MEDIA MOBILE */
@@ -149,7 +237,24 @@ body {
     background-color: black;
     display: flex;
     height: 100vh;
-    width: calc(100% - 80px)
+    width: calc(100vw - 80px);
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+      }
+
+nav.player > .container {
+    padding: 0;
+}
+
+
+.command > .fa-solid {
+    font-size: 20px;
+    padding: 3px;
+}
+
+.command > .fa-regular {
+    font-size: 23px;
+    padding: 3px;
 }
 
 }
