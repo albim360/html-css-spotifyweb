@@ -142,11 +142,12 @@ header.main-header {
 main.main-content {
     width: calc(100% - 200px);
     height: calc(100% - 90px);
+    background-color: rgb(19, 24, 35);
 }
 
 .main-content > .container {
     height: 90px;
-    background-color: rgb(8, 11, 19);
+    background-color: rgb(8, 10, 18);
     width: 100%;
     position: fixed;
 }
