@@ -155,7 +155,7 @@ main.main-content {
 /* HEADER / PLAYLIST */
 
 .logo {
-    padding-bottom: 26px;
+    padding-bottom: 20 8px 8px;
 }
 
 .logo-big {
@@ -165,6 +165,11 @@ main.main-content {
 
   .small-logo {
     max-width: 30px;
+  }
+
+
+  .home-search-lib img {
+    max-width: 29px;
   }
 
 /* PLAYER */
