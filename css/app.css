@@ -51,7 +51,11 @@ a {
 }
 
 .grey {
-    color: rgb(214,208,247);
+    color: rgb(163,163,163);
+}
+
+.bg-grey {
+    background-color: rgb(163, 163, 163);
 }
 
 .black-grey {
@@ -170,6 +174,25 @@ main.main-content {
 
   .home-search-lib img {
     max-width: 29px;
+  }
+
+  .top-sidebar-left {
+    padding-bottom: 15px;
+  }
+
+  .playlist-title {
+    font-size: 18px;
+  }
+
+  .playlist-add-button {
+    padding: 9px;
+    margin-top: 11px;
+    margin-right: 6px;
+    font-size: 22px;
+  }
+
+  .add-playlist-text {
+    font-size: 17px;
   }
 
 /* PLAYER */
