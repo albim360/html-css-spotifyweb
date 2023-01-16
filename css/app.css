@@ -1,3 +1,7 @@
+:root {
+	--sidabar-width: 230px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -15,12 +19,17 @@ ol,
 menu,
 li {
     list-style-type: none;
+    list-style: none;
 }
 
 
 a {
     text-decoration: none;
     color: currentColor;
+}
+
+.inline {
+    display: inline;
 }
 
 .inline-block {
@@ -122,6 +131,8 @@ header.main-header {
     height: calc(100vh - 90px);
     background-color: rgb(0, 0, 0);
     flex-shrink: 0;
+    padding: 16px;
+
 }
 
 main.main-content {
@@ -138,7 +149,24 @@ main.main-content {
 
 .row {
     display: flex;
+
 }
+
+/* HEADER / PLAYLIST */
+
+.logo {
+    padding-bottom: 26px;
+}
+
+.logo-big {
+    max-width: 120px;
+    margin-bottom: 10px;
+  }
+
+  .small-logo {
+    max-width: 30px;
+  }
+
 /* PLAYER */
 
 .player {
@@ -181,50 +209,83 @@ main.main-content {
     justify-content: space-between;
 }
 
-.command > .fa-solid {
-    font-size: 20px;
-    padding: 0 16px;
+.player-progress,
+.audio-controls,
+.volume-control,
+.audio-controls {
+	display: flex;
+	align-items: center;
 }
 
-.command > .fa-regular {
-    font-size: 26px;
-    padding: 3px 20px;
-}
 
 .track-command {
-    align-self: flex-start;
-    width: 51%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-basis: 33%;
 }
 
-.progress-bar-white {
-    width: 55%;
-    height: 4px;
-    border-radius: 25px;
-    background: linear-gradient(to right, white 0%, white 20%, grey 0%, grey 80%);
-
+.command ul li {
+    display: inline;
+    list-style: none;
 }
 
-.volume-device-list {
-    align-self: center;
+.command {
+    display: flex;
+    justify-content: center;
 }
 
-.volume-device-list i{
-    margin-left: 12px;
+
+.controls {
+	font-size: 24px;
+	padding: 10px 8px;
 }
 
-.progress-bar-volume {
-    width: 76px;
-    height: 4px;
-    border-radius: 25px;
-    background: linear-gradient(to right, white 0%, white 60%, grey 0%, grey 40%);
-    vertical-align: middle;
+.controls.play {
+	font-size: 35px;
+	padding: 4px 12px;
+}
 
+.player-progress {
+	gap: 10px;
+}
+
+.progress {
+	background-color: gray;
+	flex-grow: 1;
+}
+
+.progress-indicator {
+	background-color: white;
+	height: 4px;
+	width: 23%;
+}
+
+.progress,
+.progress-indicator {
+	border-radius: 99px;
+}
+
+.audio-controls {
+	padding-right: 11px;
+}
+
+.volume-control {
+    flex-grow: 1;
+}
+
+.audio-controls,
+.volume-control {
+	gap: 16px;
+}
+
+.audio-controls {
+	flex-basis: var(--sidabar-width);
 }
 
 /* MEDIA MOBILE */
 
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 585px) {
 
 header.main-header {
     width: 80px;
@@ -242,19 +303,38 @@ body {
     min-height: -webkit-fill-available;
       }
 
-nav.player > .container {
-    padding: 0;
+
+ .current-track-title {
+    font-size: 14px;
+    vertical-align: middle;
+    padding-right: 0;
 }
 
-
-.command > .fa-solid {
-    font-size: 20px;
-    padding: 3px;
+.player .current-track i{
+    vertical-align: middle;
+    padding-left: 0;
 }
 
-.command > .fa-regular {
-    font-size: 23px;
-    padding: 3px;
+.current-track-title {
+    font-size: 14px;
+    vertical-align: middle;
+    padding-right: 0;
 }
 
+.logo-display-none {
+    display: none;
+  }
+
+  .display-none {
+    display: none;
+  }
+
+
+}
+
+@media only screen and (min-width: 586px) {
+
+    .small-logo-display-none {
+        display: none;
+      }
 }

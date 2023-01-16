@@ -17,13 +17,41 @@
 
     <!-- INIZIO HEADER -->
     <header class="main-header">
+        <div class="sidebar-left">
+            <div class="logo">
+              <img src="img/logo.svg" alt="" class="logo-big logo-display-none logo-display-block">
+              <img src="img/logo-small.svg" alt="" class="small-logo  small-logo-display-none">
+            </div>
+            <div class="home-search-lib">
+                <span class="home">
+                 <img src="./img/home.svg" alt="">
+                 <span class="txt-home-search-lib black-grey">
+                    Home
+                 </span>
+                </span>
+
+                <span class="cerca">
+                 <img src="./img/search.svg" alt="">
+                 <span class="txt-home-search-lib black-grey">
+                    Cerca
+                 </span>
+                </span>
+                <span class="lib">
+                    <span class="txt-home-search-lib black-grey">
+                        La tua libreria
+                    </span>
+                    <img src="./img/libreria.svg" alt="">
+                </span>
+            </div>
+        </div>
+            
        
     </header>
     <!-- FINE HEADER -->
         <nav class="player">
             <div class="container">
                 <div class="row">
-                    <div class="current-track">
+                     <div class="current-track">
                         <img src="./img/sinister.jpeg" alt="" class="current-track-img">
                         <h2 class="current-track-title white inline-block">
                             Sinister
@@ -31,30 +59,48 @@
                         </h2> 
                         <i class="fa-regular fa-heart black-grey"></i>
                         <i class="fa-regular fa-folder black-grey"></i>
-                    </div>
-                    <div class="track-command">
-                        <span class="command">
-                            <i class="fa-solid fa-shuffle white"></i>
-                            <i class="fa-solid fa-backward-step white"></i>
-                            <i class="fa-regular fa-circle-play white"></i>
-                            <i class="fa-solid fa-forward-step white"></i>
-                            <i class="fa-solid fa-rotate-right white"></i>
-                            <div class="progress-bar-full">
-                                <p class="inline-block white fs-10px">0:25</p>
-                                <div class="progress-bar-white inline-block"> </div>
-                                <p class="inline-block white fs-10px">4:35</p>
-                            </div>
-
-                        </span>
-                    </div>
-                    <div class="volume-device-list white">
-                        <i class="fa-solid fa-list"></i>
-                        <i class="fa-solid fa-display"></i>
-                        <i class="fa-solid fa-volume-high"></i>
-                        <div class="progress-bar-volume inline-block">
-
-                        </div>
+                     </div>
+                     <div class="track-command">
+                            <ul class="inline command">
+                                <li class="controls shuffle"> <i class="fa-solid fa-shuffle white"> </i> </li>
+                                <li class="controls backward"> <i class="fa-solid fa-backward-step white"> </i> </li>
+                                <li class="controls play"> <i class="fa-regular fa-circle-play white"> </i> </li>
+                                <li class="controls forward"> <i class="fa-solid fa-forward-step white"> </i> </li>
+                                <li class="controls repeat"> <i class="fa-solid fa-rotate-right white"> </i> </li>
+                            </ul>
+                            <div class="player-progress">
+                                <div class="player-time current-time white">
+                                  0:25
+                                </div>
                         
+                                <div class="progress">
+                                  <div class="progress-indicator">
+                        
+                                  </div>
+                                </div>
+                        
+                                <div class="player-time total-time white">
+                                  4:35
+                                </div>
+                              </div>
+                    </div>
+                     <ul class="audio-controls">
+                        <li class="control">
+                          <i class="fa-solid fa-list white"></i>
+                        </li>
+                        <li class="control">
+                          <i class="fa-solid fa-desktop white"></i>
+                        </li>
+                        <li class="control volume-control ">
+                          <i class="fa-solid fa-volume-high white"></i>
+                  
+                          <div class="progress">
+                            <div class="progress-indicator">
+                  
+                            </div>
+                          </div>
+                        </li>
+                       </ul>
                     </div>
                 </div>
             </div>
