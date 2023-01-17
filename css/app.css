@@ -164,6 +164,7 @@ main.main-content {
     margin-top: 90px;
     padding: 0 20px;
     overflow: auto;
+
 }
 
 .row {
@@ -389,8 +390,11 @@ main.main-content {
     max-width: 270px;
 } */
 
-.recent {
+.recent,
+.for-u,
+.famous-artist {
     align-items: baseline;
+    flex-wrap: wrap;
 }
 
 .recent a {
@@ -404,6 +408,10 @@ main.main-content {
 .title-album-type {
     padding: 30px 0;
     align-self: baseline;
+}
+
+.title-section-album {
+    font-size: 32px;
 }
 
 .album-title {
@@ -435,9 +443,18 @@ main.main-content {
     max-width: 260px;
 }
 
+.famous-artist img {
+    max-width: 260px;
+    border-radius: 50%;
+}
+
+.famous-artist a {
+    margin-right: 15px;    
+}
+
 /* MEDIA MOBILE */
 
-@media only screen and (max-width: 585px) {
+@media only screen and (max-width: 615px) {
 
 header.main-header {
     width: 59px;
@@ -461,8 +478,7 @@ body {
     background-color: black;
     display: flex;
     height: 100vh;
-    width: calc(100vw - 80px);
-    min-height: 100vh;
+    width: 124% ;
     min-height: -webkit-fill-available;
       }
 
@@ -492,12 +508,22 @@ body {
     display: none;
   }
 
+  /* .container-big {
+    height: 89%;
+    width: 100%;
+    margin-top: 90px;
+    padding: 0 20px;
+    overflow: auto;
+
+} */
+
+
 
 
 
 }
 
-@media only screen and (min-width: 586px) {
+@media only screen and (min-width: 615px) {
 
     .small-logo-display-none {
         display: none;
