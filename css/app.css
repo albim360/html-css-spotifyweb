@@ -146,6 +146,7 @@ main.main-content {
     width: calc(100% - 200px);
     height: calc(100% - 90px);
     background-color: rgb(19, 24, 35);
+    display: flex;
 }
 
 .main-content > .container {
@@ -153,6 +154,13 @@ main.main-content {
     background-color: rgb(8, 10, 18);
     width: 100%;
     position: fixed;
+    display: flex;
+}
+
+.container-big {
+    height: 92%;
+    width: 100%;
+    margin-top: 90px;
 }
 
 .row {
@@ -218,6 +226,7 @@ main.main-content {
     width: 31px;
     height: 31px;
     vertical-align: middle;
+    object-fit: cover;
 }
 
 .install {
@@ -228,6 +237,16 @@ main.main-content {
 
 .profile span {
     font-size: 15px;
+}
+
+/* MAIN CONTENT */
+
+
+.upgrade {
+    padding: 12px;
+    border: 3px solid white;
+    align-self: center;
+    border-radius: 25px;
 }
 
 /* PLAYER */
@@ -351,10 +370,21 @@ main.main-content {
 @media only screen and (max-width: 585px) {
 
 header.main-header {
-    width: 80px;
+    width: 59px;
     height: calc(100vh - 90px);
     background-color: rgb(0, 0, 0);
     flex-shrink: 0;
+}
+
+.install {
+    border-bottom: none;
+    padding-bottom: 10px;
+    padding-right: 0;
+}
+
+
+div.bottom-sidebar-left > a {
+    text-align: center;
 }
 
 body {
@@ -391,6 +421,8 @@ body {
   .display-none {
     display: none;
   }
+
+
 
 
 }

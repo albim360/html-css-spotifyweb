@@ -25,7 +25,7 @@
             <div class="home-search-lib">
                 <span class="home">
                  <img src="./img/home.svg" alt="">
-                 <span class="txt-home-search-lib black-grey">
+                 <span class="txt-home-search-lib black-grey display-none">
                     Home
                  </span>
                 </span>
@@ -33,7 +33,7 @@
             <div class="home-search-lib">
                 <span class="cerca">
                  <img src="./img/search.svg" alt="">
-                 <span class="txt-home-search-lib black-grey">
+                 <span class="txt-home-search-lib black-grey display-none">
                     Cerca
                  </span>
                 </span>
@@ -41,15 +41,15 @@
             <div class="home-search-lib">    
                 <span class="lib">
                     <img src="./img/libreria.svg" alt="">
-                    <span class="txt-home-search-lib black-grey">
+                    <span class="txt-home-search-lib black-grey display-none">
                         La tua libreria
                     </span>
                 </span>
             </div>
-            <h4 class="playlist-title white">
+            <h4 class="playlist-title white display-none">
                 PLAYLIST
             </h4>
-            <ul>
+            <ul class="display-none">
                 <li>
                     <a href="#">
                      <i class="fa-solid fa-plus bg-grey black playlist-add-button"></i>
@@ -69,13 +69,13 @@
             <a href="#">
                 <span class="install grey bold inline-block">
                     <i class="fa-regular fa-circle-down"></i>
-                    Installa app
+                    <span class="display-none"> Installa app</span>
                 </span>
             </a>
             <div class="profile block">
                 <a href="#">
-                 <img src="./img/profile.svg" alt="" class="propic bg-grey">
-                 <span class="white bold">Alberto Zappal&agrave;</span>
+                 <img src="./img/nyancat.svg" alt="" class="propic bg-grey">
+                 <span class="white bold display-none">Alberto Zappal&agrave;</span>
                 </a>
             </div>
             
@@ -144,9 +144,12 @@
     <!-- INIZIO MAIN -->
     <main class="main-content">
         <div class="container">
-            <button class="upgrade">
+            <a href="#" class="upgrade white">
+                EFFETTUA L'UPGRADE
+            </a>
+        </div>
+        <div class="container-big">
 
-            </button>
         </div>
     </main>
     <!-- FINE MAIN -->
