@@ -152,13 +152,14 @@ main.main-content {
 .main-content > .container {
     height: 90px;
     background-color: rgb(8, 10, 18);
-    width: 100%;
+    width: calc(100% - 206px);
     position: fixed;
     display: flex;
+    justify-content: end;
 }
 
 .container-big {
-    height: 92%;
+    height: 89%;
     width: 100%;
     margin-top: 90px;
 }
@@ -294,7 +295,8 @@ main.main-content {
 .player-progress,
 .audio-controls,
 .volume-control,
-.audio-controls {
+.audio-controls,
+.album-nav {
 	display: flex;
 	align-items: center;
 }
@@ -363,6 +365,22 @@ main.main-content {
 
 .audio-controls {
 	flex-basis: var(--sidabar-width);
+}
+
+/* ALBUM */
+
+.album-nav {
+    padding: 17px;
+}
+
+.album-nav ul li {
+    display: inline;
+    padding-right: 17px;
+    font-size: 17px;
+}
+
+.album-nav {
+    justify-content: center;
 }
 
 /* MEDIA MOBILE */
