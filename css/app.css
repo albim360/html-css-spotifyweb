@@ -136,6 +136,9 @@ header.main-header {
     background-color: rgb(0, 0, 0);
     flex-shrink: 0;
     padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
 }
 
@@ -183,18 +186,49 @@ main.main-content {
 
   .playlist-title {
     font-size: 18px;
+    padding: 15px 0 15px 0;
   }
 
   .playlist-add-button {
     padding: 9px;
-    margin-top: 11px;
     margin-right: 6px;
     font-size: 22px;
   }
 
   .add-playlist-text {
-    font-size: 17px;
+    font-size: 15px;
   }
+
+  .top-sidebar-left li {
+    display: flex;
+    padding: 10px 0;
+    flex-grow: 1;
+  }
+
+  .bottom-sidebar-left {
+    display: flex;
+    flex-direction: column;
+  }
+  .profile {
+    padding-top: 10px;
+  }
+
+.propic {
+    border-radius: 50%;
+    width: 31px;
+    height: 31px;
+    vertical-align: middle;
+}
+
+.install {
+    border-bottom: 2px solid grey;
+    padding-bottom: 10px;
+    padding-right: 45px;
+}
+
+.profile span {
+    font-size: 15px;
+}
 
 /* PLAYER */
 
